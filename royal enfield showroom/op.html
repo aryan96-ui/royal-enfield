@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Company - Inspired by Royal Enfield</title>
+    <link rel="stylesheet" href="op.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="images/royal-enfield-logo-01.jpg" alt="Company Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#motorcycles">Motorcycles</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+            <li><a href="#apparel">Apparel</a></li>
+            <li><a href="#locate">Locate Us</a></li>
+            <li><a href="#service">Service</a></li>
+        </ul>
+    </nav>
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <video id="myVideo" muted playsinline>
+                <source src="images/accessories/royal-enfield-120th-anniversary-edition-registrations-open-1080-publer.io.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay">
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            
+            <h1>Pure Motorcycling</h1>
+            <p>Experience the legacy of craftsmanship</p>
+            <a href="#explore" class="cta-button">Explore Now</a>
+            <img src="images/bikes/home-top-banner-desc.jpeg" alt="Hero Image">
+        </div>
+    </header>
+
+    <!-- Featured Motorcycles -->
+    <section class="featured-bikes">
+        <h2>Our Motorcycles</h2>
+        <div class="bike-grid">
+            <div class="bike-card">
+                <img src="images/bikes/classic-350-motorcycle-listing.webp" alt="Classic 350">
+                <h3>Classic 350</h3>
+                <p>Starting at 2.97.999</p>
+                <a href="#details" class="btn">Learn More</a>
+            </div>
+            <div class="bike-card">
+                <img src="images/bikes/continental-gt-650-thumbnail.jpg" alt="Interceptor 650">
+                <h3>Interceptor 650</h3>
+                <p>Starting at 3.45.999</p>
+                <a href="#details" class="btn">Learn More</a>
+            </div>
+            </div>
+            <div class="bike-card">
+                <img src="images/bikes/download.png" alt="Himalayan">
+                <h3>Himalayan</h3>
+                <p>Starting at 4.59.999</p>
+                <a href="#details" class="btn">Learn More</a>
+            </div>
+                <div class="bike-grid">
+                    <div class="bike-card">
+                        <img src="images/bikes/shotgun-650-motorcycle-listing.avif" alt=" shotgun Classic 650">
+                        <h3> shotgun Classic 650</h3>
+                        <p>Starting at 5.45.999</p>
+                        <a href="#details" class="btn">Learn More</a>
+                    </div>
+           
+    </section>
+    <!-- Accessories Section -->
+    <section class="accessories" id="accessories">
+        <h2>Accessories</h2>
+        <div class="accessories-grid">
+            <div class="accessory-card">
+                <img src="images/accessories/1990600-Off-Bike-640x500.avif" alt="leg guard">
+                <h3>Leg Guard</h3>
+                <p>3.299</p>
+                <a href="#buy" class="btn">Shop Now</a>
+            </div>
+            <div class="accessory-card">
+                <img src="images/accessories/kxa00054-640x500.avif" alt="set cover">
+                <h3>set cover</h3>
+                <p>4.999</p>
+                <a href="#buy" class="btn">Shop Now</a>
+            </div>
+            <div class="accessory-card">
+                <img src="images/accessories/kxa00652-640x500.avif" alt="gear cover ">
+                <h3>gear cover</h3>
+                <p>3.999</p>
+                <a href="#buy" class="btn">Shop Now</a>
+            </div>
+           
+        </div>
+    </section>
+ 
+    <!-- Apparel Section -->
+    <section class="apparel" id="apparel">
+        <h2>Apparel</h2>
+        <div class="apparel-grid">
+            <div class="apparel-card">
+                <img src="images/clothes/th.jpeg   " alt="T-Shirt">
+                <h3>Classic T-Shirt</h3>
+                <p>2.999</p>
+                <a href="#buy" class="btn">Shop Now</a>
+            </div>
+            <div class="apparel-card">
+                <img src="images/clothes/royal-enfield-leather-jacket-680x800.webp" alt="Jacket">
+                <h3>Riding Jacket</h3>
+                <p>15.999</p>
+                <a href="#buy" class="btn">Shop Now</a>
+            </div>
+            <div class="apparel-card">
+                <img src="images/clothes/Royal-Enfield-Huntsman-Boots-Blue-Brown-1_800x.webp" alt="Boots">
+                <h3>Riding Boots</h3>
+                <p>5.999</p>
+                <a href="#buy" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('myVideo');
+            
+            // Set the start time to 15seconds
+            video.currentTime = 15;
+
+            video.play();
+
+                // Check if video time exceeds 25 seconds
+            video.addEventListener('timeupdate', function() {
+                if (video.currentTime >= 25) {
+                    video.currentTime = 15; // Loop back to 15 seconds
+                }
+            });
+        });
+    </script>
+</body>
+</html>
